@@ -7,6 +7,8 @@
 
 // Load the steemjs library
 var steem = require('steem');
+// Modify for Smoke.IO Node
+steem.api.setOptions({ url: 'wss://rpc.smoke.io' });
 
 // Edit these 3 variables below with your own information!
 var accountName = ""; // Witness Account Name
